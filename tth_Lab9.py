@@ -1,6 +1,6 @@
 
 # Tristan Hohensee - Lab 9 - Password Encode/Decode GitHub Practice
-
+#Jackson Nichols - Lab 9
 def printMenu():
     print("\nMenu\n"
           "-------------\n"
@@ -9,12 +9,12 @@ def printMenu():
           "3. Quit\n")
 
 def encode(password):
-    encoded = ""
+    new_pw = ""
 
     for i in range(len(password)):
-        encoded += str(int(password[i]) + 3)
+        new_pw += str(int(password[i]) + 3)
 
-    return encoded
+    return new_pw
 
 def decode(password):
     decoded = ""
@@ -37,4 +37,5 @@ while True:
             decoded = decode(encoded)
             print(f"The encoded password is {encoded}, and the original password is {decoded}.")
         case "3":
+            print("Goodbye")
             exit()
