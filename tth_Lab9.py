@@ -23,7 +23,7 @@ def decode(password):
         decoded += str(int(password[i]) + 3)
 
     return decoded
-#comment
+
 while True:
     printMenu()
     option = input("Please enter an option: ")
