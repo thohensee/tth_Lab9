@@ -38,4 +38,3 @@ while True:
             print(f"The encoded password is {encoded}, and the original password is {decoded}.")
         case "3":
             exit()
-
